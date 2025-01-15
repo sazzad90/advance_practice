@@ -22,6 +22,9 @@ void dfs(int currentNode, int currentCost, vector<int> &path, unordered_map<int,
         if(!isVisited[neighbor]){
             dfs(neighbor, currentCost+currentNode, path, adjList, isVisited, minCost);
         }else{
+            // while(path[0]!=neighbor){
+            //     path.erase(path.begin());
+            // }
             if(currentCost+currentNode < minCost){
                 minCost = currentCost+currentNode;
                 minPath = path;

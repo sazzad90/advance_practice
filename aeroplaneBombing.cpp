@@ -33,6 +33,7 @@ void bfs(int row, int col, vector<vector<int>> &matrix, int &totalScore){
         }
     }
 }
+
 int main() {
     int t;
     cin >> t;
