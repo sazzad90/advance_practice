@@ -14,7 +14,7 @@ void backtrack(int x, int currentCost, int cityLeft, vector<vector<int>> &matrix
     if(cityLeft == 0){
         minCost = min(minCost, (currentCost+matrix[x][0]));
         return;
-    }  
+    }   
     for(int i = 1; i<n; i++){
         if(!visited[i]){
             visited[i] = true;
